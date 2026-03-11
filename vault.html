@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Vault – PromptVault</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" sizes="any" />
+  <link rel="shortcut icon" href="assets/icon.svg" type="image/svg+xml" />
+</head>
+<body class="page-vault">
+  <header class="pv-header">
+    <nav class="pv-nav container">
+      <a href="index.html" class="pv-logo">
+        <span class="pv-logo-mark"></span>
+        <span class="pv-logo-text">Prompt<span class="pv-logo-strong">Vault</span></span>
+      </a>
+      <button class="pv-theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+      <button class="pv-nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="pv-nav-links">
+        <li><a href="library.html">Library</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="submit.html">Submit</a></li>
+        <li><a href="vault.html" class="active">My Vault</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container pv-main">
+    <header class="pv-page-header">
+      <h1>My Vault</h1>
+      <p>Your saved prompts live here. Everything is stored locally in this browser.</p>
+    </header>
+
+    <section id="vaultList" class="pv-card-list" aria-live="polite">
+      <!-- Saved prompts injected by JavaScript -->
+    </section>
+
+    <p id="vaultEmptyState" class="pv-empty">
+      You have not saved any prompts yet. Browse the <a href="library.html">library</a> to get started.
+    </p>
+  </main>
+
+  <footer class="pv-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> PromptVault</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+

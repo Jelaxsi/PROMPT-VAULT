@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Essay Writer",
+    "category": "Writing",
+    "prompt": "Act as an academic essay writer and help me write an essay about climate change."
+  },
+  {
+    "title": "Study Notes",
+    "category": "Study",
+    "prompt": "Explain this topic in simple bullet points."
+  },
+  {
+    "title": "Coding Debugger",
+    "category": "Coding",
+    "prompt": "Act as a senior software engineer and help me debug the following code. Explain what is wrong and propose a fix."
+  },
+  {
+    "title": "Research Assistant",
+    "category": "Research",
+    "prompt": "Help me research this topic by outlining key questions, sources to check, and a short summary of the current state of knowledge."
+  },
+  {
+    "title": "Productivity Coach",
+    "category": "Productivity",
+    "prompt": "Act as a productivity coach and help me design a realistic study schedule for the next 7 days based on my tasks."
+  },
+  {
+    "title": "Language Tutor",
+    "category": "Language Learning",
+    "prompt": "Help me practice this language by creating example sentences, short dialogues, and simple quizzes around the topic I give you."
+  }
+]
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit Prompt – PromptVault</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" sizes="any" />
+  <link rel="shortcut icon" href="assets/icon.svg" type="image/svg+xml" />
+</head>
+<body class="page-submit">
+  <header class="pv-header">
+    <nav class="pv-nav container">
+      <a href="index.html" class="pv-logo">
+        <span class="pv-logo-mark"></span>
+        <span class="pv-logo-text">Prompt<span class="pv-logo-strong">Vault</span></span>
+      </a>
+      <button class="pv-theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+      <button class="pv-nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="pv-nav-links">
+        <li><a href="library.html">Library</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="submit.html" class="active">Submit</a></li>
+        <li><a href="vault.html">My Vault</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container pv-main">
+    <header class="pv-page-header">
+      <h1>Submit a Prompt</h1>
+      <p>Add your favorite AI prompts to your personal PromptVault. They will be saved only in this browser.</p>
+    </header>
+
+    <form id="submitForm" class="pv-form">
+      <div class="pv-field">
+        <label for="title">Prompt Title</label>
+        <input id="title" name="title" type="text" class="pv-input" required />
+      </div>
+
+      <div class="pv-field">
+        <label for="category">Category</label>
+        <input
+          id="category"
+          name="category"
+          type="text"
+          list="categoryOptions"
+          class="pv-input"
+          required
+        />
+        <datalist id="categoryOptions">
+          <option value="Study"></option>
+          <option value="Writing"></option>
+          <option value="Coding"></option>
+          <option value="Research"></option>
+          <option value="Productivity"></option>
+          <option value="Language Learning"></option>
+        </datalist>
+      </div>
+
+      <div class="pv-field">
+        <label for="promptText">Prompt Text</label>
+        <textarea
+          id="promptText"
+          name="promptText"
+          class="pv-input pv-textarea"
+          rows="5"
+          required
+        ></textarea>
+      </div>
+
+      <div class="pv-field">
+        <label for="description">Description (optional)</label>
+        <textarea
+          id="description"
+          name="description"
+          class="pv-input pv-textarea"
+          rows="3"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="pv-btn">Submit Prompt</button>
+      <p id="submitMessage" class="pv-message" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="pv-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> PromptVault</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+
